@@ -127,7 +127,7 @@ export const forgotPasswordController = async (req, res, next) => {
       from: "bloodshare9@gmail.com",
       to: email,
       subject: "Reset your password",
-      text:`Please reset your password by using following link: http://localhost:3000/#/reset-password/${user._id}/${token}`,
+      text:`Please reset your password by using following link: https://blood-share-frontend.onrender.com/#/reset-password/${user._id}/${token}`,
     };
     transporter.sendMail(mailOptions, function (error, info) {
       if (error) {
