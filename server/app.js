@@ -17,7 +17,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://blood-share-frontend.onrender.com"],
     credentials: true, // such as cookies or HTTP authentication) to be included in CORS requests
   })
 );
